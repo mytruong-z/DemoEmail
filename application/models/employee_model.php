@@ -46,7 +46,7 @@ class Employee_Model extends CI_Model{
     
     //send confirm mail
     public function sendEmail($receiver){
-        $from = 'ngocmy.truong29@gmail.com';    //senders email address
+        $from = 'your_email';    //senders email address
         $subject = 'Verify email address';  //email subject
         
         //sending confirmEmail($receiver) function calling link to the user, inside message body
@@ -62,7 +62,7 @@ class Employee_Model extends CI_Model{
         $config['smtp_port'] = '465';
         $config['smtp_user'] = $from;
         $config['_smtp_auth'] = TRUE;
-        $config['smtp_pass'] = 'tnm29199#'; 
+        $config['smtp_pass'] = 'your_pass'; 
         $config['mailtype'] = 'html';
         $config['charset'] = 'iso-8859-1';
         $config['wordwrap'] = 'TRUE';
